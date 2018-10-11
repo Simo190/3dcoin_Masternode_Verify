@@ -24,11 +24,6 @@ clear
 }
 
 
-function setup_node() {
-  
-  important_information
-  configure_systemd
-}
 
 ##### Main #####
 clear
