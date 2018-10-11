@@ -17,7 +17,7 @@ wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/i
 ## Usage control script:
 
 ```
-./3d_check.sh -[argument]
+./3d -[argument]
 
 -a start 3dcoin service
 -b stop 3dcoin service
