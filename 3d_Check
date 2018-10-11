@@ -1,0 +1,50 @@
+#!/bin/bash
+
+if [[ $USER != "root" ]]; then 
+		echo "This script must be run as root!" 
+		exit 1
+fi
+
+usage=".3d_check.sh [arguments]"
+VERBOSE=true
+counter="0"
+
+while getopts 'abcdefhklmnop?' option
+do
+  case "$option" in
+  a) 3dcoind -daemon
+     ((counter+=1))
+     ;;
+  b) 3dcoin-cli stop
+     ((counter+=1))
+     ;;
+  c) 3dcoin-cli mnsync status
+     ((counter+=1))
+     ;;
+  d) 3dcoin-cli masternode status
+     ((counter+=1))
+     ;;
+  e) nano .3dcoin/3dcoin.conf
+     ((counter+=1))
+     ;;
+  f) 3dcoin-cli getinfo
+     ((counter+=1))
+     ;;
+  g) 3dcoin-cli getblockcount
+     ((counter+=1))
+     ;;
+  h) 3dcoin-cli getpeerinfo
+     ((counter+=1))
+     ;;
+  ?) $usage
+     exit 0
+     ;;
+  esac
+done
+
+if [ $counter -eq 1 ];then
+  exit 0
+else
+  echo $usage
+  exit 1
+fi
