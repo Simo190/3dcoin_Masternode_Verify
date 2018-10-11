@@ -9,7 +9,7 @@ NC='\033[0m'
 function prepare_system() {
 
 echo -e "Prepare the system to install ${GREEN} 3dcoin simplify check VPS"
-wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/3d.sh && chmod +x 3d_check.sh
+wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/3d.sh && chmod +x 3d.sh
 apt-get update >/dev/null 2>&1
 apt-get install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" htop unzip >/dev/null 2>&1
 if [ "$?" -gt "0" ];
