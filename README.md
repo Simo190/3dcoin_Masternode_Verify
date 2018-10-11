@@ -7,7 +7,7 @@ Simplify the check of the Masternode in VPS
 ## VPS
 
 ```
-wget https://raw.githubusercontent.com/Simo190/LITEX-masternode-autoinstall/master/Upload_Ltx-control.sh && bash Upload_Ltx-control.sh
+wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/install_3d_check.sh && bash install_3d_check.sh
 ```
 
 
