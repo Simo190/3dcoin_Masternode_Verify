@@ -5,7 +5,7 @@ if [[ $USER != "root" ]]; then
 		exit 1
 fi
 
-usage="./3d_check.sh [arguments]"
+usage="3d [arguments]"
 VERBOSE=true
 counter="0"
 
