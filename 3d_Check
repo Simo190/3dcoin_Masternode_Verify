@@ -9,7 +9,7 @@ usage=".3d_check.sh [arguments]"
 VERBOSE=true
 counter="0"
 
-while getopts 'abcdefhklmnop?' option
+while getopts 'abcdefgh?' option
 do
   case "$option" in
   a) 3dcoind -daemon
