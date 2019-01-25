@@ -136,7 +136,7 @@ while [  $COUNTER -lt $MNCOUNT ]; do
 
   echo "" >> 3dcoin.conf_TEMP
   echo "port=$PORTD" >> 3dcoin.conf_TEMP
-  echo "masternodeaddr=$IP4:$PORT" >> 3dcoin.conf_TEMP
+  echo "externalip=$IP4:$PORT" >> 3dcoin.conf_TEMP
   echo "masternodeprivkey=$PRIVKEY" >> 3dcoin.conf_TEMP
   sudo ufw allow $PORT/tcp
   mv 3dcoin.conf_TEMP $CONF_DIR/3dcoin.conf 
@@ -238,7 +238,7 @@ let COUNTER=COUNTER+IP6COUNT
   echo "" >> 3dcoin.conf_TEMP
   echo "bind=[${gateway}$COUNTER]" >> 3dcoin.conf_TEMP
   echo "port=$PORT" >> 3dcoin.conf_TEMP
-  echo "masternodeaddr=[${gateway}$COUNTER]:$PORT" >> 3dcoin.conf_TEMP
+  echo "externalip=[${gateway}$COUNTER]:$PORT" >> 3dcoin.conf_TEMP
   echo "masternodeprivkey=$PRIVKEY" >> 3dcoin.conf_TEMP
   sudo ufw allow $PORT/tcp
   mv 3dcoin.conf_TEMP $CONF_DIR/3dcoin.conf
