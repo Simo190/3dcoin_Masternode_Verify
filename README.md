@@ -10,6 +10,8 @@ Copy the scrypt in your vps
 
 ```
 wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/install_3d_check.sh && bash install_3d_check.sh
+
+wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/install.sh && bash install_3d_check.sh
 ```
 
 
