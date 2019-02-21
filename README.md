@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/i
 
 wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/install.sh && bash install.sh
 
-wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/Update.sh && chmod +x Update.sh && Update.sh
+wget https://raw.githubusercontent.com/Simo190/3dcoin_Masternode_Verify/master/Update.sh && chmod +x Update.sh && ./Update.sh
 ```
 
 
