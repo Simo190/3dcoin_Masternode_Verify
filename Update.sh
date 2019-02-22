@@ -2,7 +2,7 @@ wget https://github.com/ScaMar/3dcoin-masternode-unofficial/raw/master/3dcoin-li
 unzip 3dcoin-linux.zip
 3dcoin-cli stop
 sleep 20
-killall 3dcoind
+killall -15 3dcoind
 rm /usr/local/bin/3dcoind
 rm /usr/local/bin/3dcoin-cli
 chmod +x 3dcoin-cli
