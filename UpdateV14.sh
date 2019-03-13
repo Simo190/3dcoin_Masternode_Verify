@@ -10,4 +10,4 @@ chmod +x 3dcoind
 mv 3dcoind /usr/local/bin
 mv 3dcoin-cli /usr/local/bin
 3dcoind -daemon
-watch 3dcoin-cli masternode status
+watch 3dcoin-cli mnsync status
