@@ -10,6 +10,8 @@ chmod +x 3dcoind
 mv 3dcoin-x86_64-pc-linux-gnu-v0.14.4.2/bin/3dcoind /usr/local/bin
 mv 3dcoin-x86_64-pc-linux-gnu-v0.14.4.2/bin/3dcoin-cli /usr/local/bin
 3dcoind -daemon
+rm -r 3dcoin-x86_64-pc-linux-gnu-v0.14.4.2
+rm 3dcoin-v0.14.4.2-x86_64-pc-linux-gnu.zip
 sleep 20
 3dcoin-cli addnode 89.36.213.199:6695 onetry
 3dcoin-cli -version
