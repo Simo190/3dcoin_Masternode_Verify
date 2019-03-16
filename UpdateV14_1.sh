@@ -1,8 +1,7 @@
-rm linux.zip
 wget https://github.com/ScaMar/3dcoin/releases/download/v0.14.4.2/3dcoin-v0.14.4.2-x86_64-pc-linux-gnu.zip
-unzip linux.zip
+unzip 3dcoin-v0.14.4.2-x86_64-pc-linux-gnu.zip
 3dcoin-cli stop
-sleep 20
+sleep 30
 killall -15 3dcoind
 rm /usr/local/bin/3dcoind
 rm /usr/local/bin/3dcoin-cli
