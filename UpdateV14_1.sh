@@ -7,8 +7,8 @@ rm /usr/local/bin/3dcoind
 rm /usr/local/bin/3dcoin-cli
 chmod +x 3dcoin-cli
 chmod +x 3dcoind
-mv 3dcoind /usr/local/bin
-mv 3dcoin-cli /usr/local/bin
+mv 3dcoin-x86_64-pc-linux-gnu-v0.14.4.2/3dcoind /usr/local/bin
+mv 3dcoin-x86_64-pc-linux-gnu-v0.14.4.2/3dcoin-cli /usr/local/bin
 3dcoind -daemon
 sleep 20
 3dcoin-cli addnode 89.36.213.199:6695 onetry
