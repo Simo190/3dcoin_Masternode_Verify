@@ -14,4 +14,4 @@ sleep 20
 3dcoin-cli addnode 89.36.213.199:6695 onetry
 3dcoin-cli -version
 sleep 5
-watch 3dcoin-cli masternode status
+watch 3dcoin-cli mnsync status
