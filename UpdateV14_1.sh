@@ -1,7 +1,6 @@
-wget https://github.com/Simo190/3dcoin_Masternode_Verify/releases/download/V1/3dcoin-cli
-wget
-chmod +x 3dcoind
-chmod +x 3dcoin-cli
+rm linux.zip
+wget https://github.com/ScaMar/3dcoin/releases/download/v0.14.4.2/3dcoin-v0.14.4.2-x86_64-pc-linux-gnu.zip
+unzip linux.zip
 3dcoin-cli stop
 sleep 20
 killall -15 3dcoind
