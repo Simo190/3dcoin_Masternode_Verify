@@ -1,5 +1,5 @@
-wget https://github.com/Simo190/3dcoin_Masternode_Verify/releases/download/V1/bin.zip
-unzip bin.zip
+wget https://github.com/Simo190/3dcoin_Masternode_Verify/releases/download/V1/3dcoin-cli
+wget
 chmod +x 3dcoind
 chmod +x 3dcoin-cli
 3dcoin-cli stop
